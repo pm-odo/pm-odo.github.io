@@ -16,7 +16,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
 h1,
 h2,
 h3,
@@ -416,5 +415,13 @@ footer p {
 
     .ad-cont {
         width: 100%;
+    }
+
+    .grading-img {
+        width: 100%;
+    }
+
+    .course img {
+        object-fit: contain;
     }
 }
