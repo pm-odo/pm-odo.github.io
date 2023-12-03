@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+label,
+select {
+    font-family: 'Inter', sans-serif;
+}
+
+.full-view {
+    height: 100vh;
+}
+
+a,
+p {
+    text-align: justify;
+    text-decoration: none;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #E7F2F8;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.tablet-desktop {
+    justify-content: space-evenly;
+}
+
+.mobile-nav {
+    justify-content: space-between;
+    display: none;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #005485;
+}
+
+.hamburger {
+    font-size: 40px;
+    color: #005485;
+}
+
+nav .links::before {
+    content: '';
+    position: absolute;
+    bottom: 2vw;
+    width: 0px;
+    height: 2px;
+    background-color: #005485;
+    transition: width 0.2s ease;
+}
+
+nav .links:hover:before {
+    width: 50px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scholarship {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.grading-scheme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20vh 0;
+}
+
+.heading-1 {
+    margin-bottom: 20px;
+}
+
+.course-list .course {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background: linear-gradient(rgba(0, 85, 135, 0.9), rgba(0, 85, 135, 0.9)), url('../assets/LAMBTON-FOOTER.webp');
+    background-size: cover;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 10px;
+}
+
+.image-banner-container {
+    position: relative;
+}
+
+.image-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 85, 135, 0.8);
+
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.overlay h1,
+h2,
+span {
+    color: white;
+}
+
+
+h1 {
+    font-size: 2vw;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 1vw;
+    color: #FF9900;
+}
+
+
+.explore-courses {
+    margin: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: #005485;
+}
+
+.course-list {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    margin: 40px 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.title-container {
+    width: 90%;
+}
+
+.title-container p {
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.course {
+    display: block;
+    width: 20vw;
+    height: 40vh;
+    box-shadow: 0;
+    transition: box-shadow 0.25s ease;
+    position: relative;
+}
+
+.course:hover {
+    cursor: pointer;
+    box-shadow: 2px 5px 5px rgba(0, 85, 135, 0.25);
+}
+
+
+.admission-details {
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.admission-req {
+    margin-top: 40px;
+    width: 90%;
+}
+
+.req-sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.req-sec img {
+    margin: 20px;
+}
+
+.heading-2 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.ad-cont {
+    width: 40%;
+}
+
+.process {
+    margin-top: 4vw;
+}
+
+.process-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.filter-section {
+    align-self: flex-end;
+    margin-right: 10vw;
+}
+
+.filter-section label,
+select {
+    font-size: 1rem;
+}
+
+.filter-section select {
+    margin-left: 10px;
+    border: 1px solid rgba(0, 85, 135, 0.8);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+.gallery-img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+gallery-img:hover {
+    opacity: 0.7;
+}
+
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .course {
+        width: 370px;
+    }
+
+    .full-view {
+        height: 100%;
+    }
+
+    .req-sec {
+        flex-direction: column;
+    }
+
+    .ad-cont {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .tablet-desktop {
+        justify-content: space-evenly;
+        display: none;
+    }
+
+    .mobile-nav {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .full-view {
+        height: 100%;
+    }
+
+    .course {
+        width: 100vw;
+        height: 450px;
+    }
+
+    .admission-details {
+        padding: 0;
+    }
+
+    .req-sec {
+        flex-direction: column;
+    }
+
+    .ad-cont {
+        width: 100%;
+    }
+}
