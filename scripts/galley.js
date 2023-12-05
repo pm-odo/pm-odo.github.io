@@ -6,3 +6,5 @@ $(".gallery-img").click(function(){
   $("#image-viewer .close").click(function(){
     $('#image-viewer').hide();
   });
+
+  console.log("VA")
